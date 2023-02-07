@@ -1,9 +1,9 @@
 using Microsoft.CodeAnalysis.CSharp;
-using Riok.Mapperly.Abstractions;
-using Riok.Mapperly.Descriptors.Mappings;
-using Riok.Mapperly.Helpers;
+using MapTrick.Abstractions;
+using MapTrick.Descriptors.Mappings;
+using MapTrick.Helpers;
 
-namespace Riok.Mapperly.Descriptors.MappingBuilders;
+namespace MapTrick.Descriptors.MappingBuilders;
 
 public static class ExplicitCastMappingBuilder
 {
@@ -16,11 +16,12 @@ public static class ExplicitCastMappingBuilder
             return null;
 
         var conversion = ctx.Compilation.ClassifyConversion(ctx.Source, ctx.Target);
-
-        // only allow user defined explicit reference conversions
-        // since other may return an extra runtime type check or may throw InvalidCastException.
-        // see c# language specification section 10.3.5 explicit reference conversions
-        // https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/conversions#1035-explicit-reference-conversions
+       ///<summary>
+       ///  Only allow user defined explicit reference conversions
+        /// since other may return an extra runtime type check or may throw InvalidCastException.
+        /// see c# language specification section 11.0.1 explicit reference conversions
+        /// https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/conversions#1035-explicit-reference-conversions
+        /// </summary>
         return conversion.IsExplicit && (!conversion.IsReference || conversion.IsUserDefined)
             ? new CastMapping(ctx.Source, ctx.Target)
             : null;

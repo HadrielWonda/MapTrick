@@ -1,10 +1,10 @@
 using Microsoft.CodeAnalysis;
-using Riok.Mapperly.Abstractions;
-using Riok.Mapperly.Descriptors.Mappings;
-using Riok.Mapperly.Diagnostics;
-using Riok.Mapperly.Helpers;
+using MapTrick.Abstractions;
+using MapTrick.Descriptors.Mappings;
+using MapTrick.Diagnostics;
+using MapTrick.Helpers;
 
-namespace Riok.Mapperly.Descriptors.MappingBuilders;
+namespace MapTrick.Descriptors.MappingBuilders;
 
 public static class EnumMappingBuilder
 {

@@ -1,9 +1,9 @@
 using Microsoft.CodeAnalysis;
-using Riok.Mapperly.Descriptors.Mappings;
-using Riok.Mapperly.Descriptors.Mappings.ExistingTarget;
-using Riok.Mapperly.Helpers;
+using MapTrick.Descriptors.Mappings;
+using MapTrick.Descriptors.Mappings.ExistingTarget;
+using MapTrick.Helpers;
 
-namespace Riok.Mapperly.Descriptors.MappingBuilders;
+namespace MapTrick.Descriptors.MappingBuilders;
 
 public static class NewInstanceObjectPropertyMappingBuilder
 {

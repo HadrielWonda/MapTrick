@@ -1,11 +1,12 @@
-using Riok.Mapperly.Descriptors.Mappings;
-using Riok.Mapperly.Descriptors.Mappings.PropertyMappings;
+using MapTrick.Descriptors.Mappings;
+using MapTrick.Descriptors.Mappings.PropertyMappings;
 
-namespace Riok.Mapperly.Descriptors.MappingBuilders;
+namespace MapTrick.Descriptors.MappingBuilders;
 
 public class NewInstanceMappingBuilderContext : ObjectPropertyMappingBuilderContext<NewInstanceObjectPropertyMapping>
 {
-    public NewInstanceMappingBuilderContext(MappingBuilderContext builderContext, NewInstanceObjectPropertyMapping mapping) : base(builderContext, mapping)
+    public NewInstanceMappingBuilderContext(MappingBuilderContext builderContext, NewInstanceObjectPropertyMapping mapping)
+     : base(builderContext, mapping)
     {
     }
 

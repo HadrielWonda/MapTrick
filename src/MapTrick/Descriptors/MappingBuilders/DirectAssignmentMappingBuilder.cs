@@ -1,8 +1,8 @@
 using Microsoft.CodeAnalysis;
-using Riok.Mapperly.Descriptors.Mappings;
-using Riok.Mapperly.Helpers;
+using MapTrick.Descriptors.Mappings;
+using MapTrick.Helpers;
 
-namespace Riok.Mapperly.Descriptors.MappingBuilders;
+namespace MapTrick.Descriptors.MappingBuilders;
 
 public static class DirectAssignmentMappingBuilder
 {

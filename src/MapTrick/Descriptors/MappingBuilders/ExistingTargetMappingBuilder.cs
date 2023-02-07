@@ -1,7 +1,7 @@
 using Microsoft.CodeAnalysis;
-using Riok.Mapperly.Descriptors.Mappings.ExistingTarget;
+using MapTrick.Descriptors.Mappings.ExistingTarget;
 
-namespace Riok.Mapperly.Descriptors.MappingBuilders;
+namespace MapTrick.Descriptors.MappingBuilders;
 
 public class ExistingTargetMappingBuilder
 {

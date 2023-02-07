@@ -1,8 +1,8 @@
 using Microsoft.CodeAnalysis;
-using Riok.Mapperly.Abstractions;
-using Riok.Mapperly.Descriptors.Mappings;
+using MapTrick.Abstractions;
+using MapTrick.Descriptors.Mappings;
 
-namespace Riok.Mapperly.Descriptors.MappingBuilders;
+namespace MapTrick.Descriptors.MappingBuilders;
 
 public static class ToStringMappingBuilder
 {
